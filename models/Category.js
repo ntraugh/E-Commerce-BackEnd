@@ -8,7 +8,7 @@ Category.init(
   // only need an id and category_name for category according to seeds
   {
    id: {
-    type: DataTypes.STRING,
+    type: DataTypes.INTEGER,
     allowNull: false,
     primaryKey: true, 
     autoIncrement: true,
