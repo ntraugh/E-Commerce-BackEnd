@@ -5,13 +5,18 @@ const sequelize = require('../config/connection.js');
 class Category extends Model {}
 
 Category.init(
+  // only need an id and category_name for category according to seeds
   {
-   product: {
+   id: {
     type: DataTypes.STRING,
     allowNull: false,
     primaryKey: true, 
     autoIncrement: true,
    },
+   category_name: {
+    type: DataTypes.STRING,
+    allowNull: false
+   }
   
   },
   {
